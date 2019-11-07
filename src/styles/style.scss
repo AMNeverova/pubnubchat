@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "aliceregular";
+  src: url("../font/alice-regular-webfont.woff2") format("woff2"),
+    url("../font/alice-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #fcf6f0;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 75%;
+  margin: 0 auto;
+  background-color: #edf8fa;
+  border-left: 0.2rem solid #dae6e8;
+  border-right: 0.2rem solid #dae6e8;
+  box-shadow: 0.3rem 0 0.3rem 0 #dae6e8, -0.3rem 0 0.3rem #dae6e8;
+  display: flex;
+  height: 100vh;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.input-text {
+  width: 75%;
+  height: 3rem;
+  border: 0.1rem solid #c9d5d6;
+  align-self: flex-end;
+  margin-bottom: 3rem;
+  font-family: "aliceregular";
+  font-size: 1rem;
+  color: #4b4c4d;
+  padding-left: 0.5rem;
+}
+
+.input-text:focus {
+  outline: none;
+}
+
+.input-text::placeholder {
+  font-style: italic;
+  color: #a9abab;
+}
+
+.messages {
+  color: #595c5c;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'aliceregular';
+  width: 80%;
+  margin: 0 auto;
+  align-items: flex-start;
+  align-self: flex-start;
+  margin-top: 0.5rem;
+  max-height: 80vh;
+  overflow-y: auto;
+
+  .message {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-start;
+    align-items: baseline;
+    min-height: 1.5rem;
+    .message-content {
+      margin: 0;
+      height: auto;
+      padding-left: 0.2rem;
+    }
+    .message-start {
+      height: auto;
+      color: #4d9399;
+      font-size: 1rem;
+      font-weight: bold;
+      margin: 0;
+    }
+  }
+}
